@@ -1,4 +1,161 @@
+# ==============================
+# Project / Tooling
+# ==============================
 .claude/
-node_modules/
+
+# ==============================
+# Operating System Files
+# ==============================
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+
+# Windows
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ==============================
+# Editor / IDE Files
+# ==============================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, PhpStorm, etc.)
+.idea/
+*.iml
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs swap files
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ==============================
+# Node.js
+# ==============================
+node_modules/
+jspm_packages/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Lockfiles (uncomment if you standardize on a single package manager)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Yarn v2+
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ==============================
+# Environment Variables / Secrets
+# ==============================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.*.local
+*.pem
+*.key
+
+# ==============================
+# Build Outputs
+# ==============================
+dist/
+build/
+out/
+.output/
+.vercel/
+.netlify/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# ==============================
+# Logs
+# ==============================
+logs/
+*.log
+
+# ==============================
+# Cache Files
+# ==============================
+.cache
+.temp/
+.tmp/
+*.tsbuildinfo
+
+# ==============================
+# Testing / Coverage
+# ==============================
+coverage/
+.nyc_output/
+
+# ==============================
+# Compressed / Archive Files (accidental commits)
+# ==============================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ==============================
+# Miscellaneous
+# ==============================
+*.bak
+*.orig
+*.rej
