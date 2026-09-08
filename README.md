@@ -126,48 +126,6 @@ Your site will be live at a `*.vercel.app` URL, with automatic redeploys on ever
 
 ---
 
-## 🎓 Learning Outcomes
 
-Building BrewHaven helped strengthen the following skills:
 
-- **Web Design Fundamentals** — translating a visual reference into a cohesive, branded interface
-- **Responsive Development** — building fluid, mobile-first layouts using CSS Grid and Flexbox without a framework
-- **UI/UX Principles** — applying color theory, typographic hierarchy, spacing systems, and accessibility guidelines (WCAG contrast, focus states, ARIA)
-- **Vanilla JavaScript Interactivity** — implementing cart state, `localStorage` persistence, and DOM-driven UI updates without external libraries
-- **Design Systems Thinking** — using CSS custom properties as design tokens for consistent color, spacing, and typography across an entire site
 
----
-
-## 👤 Author
-
-**Your Name**
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
-```
-MIT License
-
-Copyright (c) 2025 BrewHaven
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
