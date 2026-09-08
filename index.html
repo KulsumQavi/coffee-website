@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrewHaven — Coffee &amp; Biscuits</title>
+<meta name="description" content="BrewHaven is a quiet Mayfair ritual — small-batch coffee, freshly-baked biscuits, and a room built for lingering. Discover the menu and shop our signature blends.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <nav class="nav-left" aria-label="Primary">
+      <a href="#about" class="nav-link">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-toggle" id="shopToggle" aria-expanded="false" aria-controls="shopMenu">
+          Shop
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" id="shopMenu">
+          <a href="#products">Artisan Beans</a>
+          <a href="#products">Espresso Capsules</a>
+          <a href="#products">Curated Coffee</a>
+          <a href="#products">Biscuit Gift Sets</a>
+        </div>
+      </div>
+      <a href="#menu" class="nav-link">Menu</a>
+    </nav>
+
+    <a href="#top" class="logo" aria-label="BrewHaven — Home">
+      <span class="logo-mark">BREWHAVEN</span>
+      <span class="logo-sub">COFFEE &amp; BISCUITS</span>
+    </a>
+
+    <div class="nav-right">
+      <button class="cart-btn" id="cartBtn" aria-haspopup="dialog" aria-controls="cartPanel" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M96 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM188 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM42.8 60H228l-24.2 111.3a16 16 0 0 1-15.7 12.7H79.9a16 16 0 0 1-15.7-12.7L37.3 33.3A8 8 0 0 0 29.5 27H8" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Cart</span>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="22" height="22" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M40 128h176M40 64h176M40 192h176" stroke="currentColor" stroke-width="16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#products" class="mobile-nav-link">Shop</a>
+    <a href="#menu" class="mobile-nav-link">Menu</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+
+<!-- ================= CART PANEL ================= -->
+<aside class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-label="Shopping cart" hidden>
+  <div class="cart-panel-header">
+    <h2>Your Cart</h2>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">
+      <svg width="18" height="18" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M200 56 56 200M56 56l144 144" stroke="currentColor" stroke-width="16" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <ul class="cart-items" id="cartItems">
+    <li class="cart-empty">Your cart is waiting. Add something worth savouring.</li>
+  </ul>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="cartCheckout">Checkout</button>
+  </div>
+</aside>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1400&auto=format&fit=crop" alt="Barista pouring steamed milk into a cup, creating latte art" loading="eager">
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">Coffee &amp; Biscuits</p>
+      <h1 class="hero-title">Not Just Coffee<br>A <em>Community &amp; Biscuit</em><br>Experience</h1>
+      <p class="hero-text">BrewHaven is a gathering place shaped by quiet ritual — where the warmth of the room, the pour of a single-origin roast, and the scent of biscuits fresh from the oven ask you to stay a little longer.</p>
+      <a href="#menu" class="btn btn-outline-light">Check Menu</a>
+    </div>
+  </section>
+
+  <!-- ================= FOUNDED STRIP ================= -->
+  <section class="founded">
+    <span class="divider-dot" aria-hidden="true"></span>
+    <p class="founded-title">Founded in 2025 in the heart of Mayfair</p>
+    <p class="founded-text">What began as a single counter and a careful pour has become a fixture of the neighbourhood — a hidden address passed on by word of mouth, and a standard of quality we refuse to compromise.</p>
+    <span class="divider-dot" aria-hidden="true"></span>
+  </section>
+
+  <!-- ================= ABOUT / TEAM ================= -->
+  <section class="about" id="about">
+    <div class="about-image about-image-left">
+      <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=1200&auto=format&fit=crop" alt="Warm, minimal coffee bar interior with hanging pendant lights">
+    </div>
+    <div class="about-copy">
+      <p class="about-lead">Our team is devoted to a single pursuit — perfecting every cup, and building a <em>culture of care</em> around it.</p>
+      <p class="about-body">Stop by, explore an ever-evolving lineup of seasonal roasts and biscuits, and become part of a community built one cup at a time. We'd love to have you.</p>
+    </div>
+    <div class="about-image about-image-right">
+      <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=1200&auto=format&fit=crop" alt="Hand holding an iced coffee glass on a wooden table">
+    </div>
+  </section>
+
+  <!-- ================= VALUE ICONS ================= -->
+  <section class="values">
+    <div class="value-item">
+      <svg class="value-icon" width="36" height="36" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M176 96V56a8 8 0 0 0-8-8H56a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h40M176 96h32a16 16 0 0 1 16 16v16a24 24 0 0 1-24 24h-8M176 96v88a16 16 0 0 1-16 16H96" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>A Space to Slow Down</h3>
+    </div>
+    <div class="value-item">
+      <svg class="value-icon" width="36" height="36" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M58 40h140M58 216h140M66 40c0 60 92 60 92 88s-92 28-92 88M198 40c0 60-92 60-92 88s92 28 92 88" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Flavour, Considered</h3>
+    </div>
+    <div class="value-item">
+      <svg class="value-icon" width="36" height="36" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M128 232c-52 0-72-40-72-80 0-56 72-112 72-112s72 56 72 112c0 40-20 80-72 80Z" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Brewed with Intention</h3>
+    </div>
+    <div class="value-item">
+      <svg class="value-icon" width="36" height="36" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M128 32a72 72 0 0 0-72 72c0 48 40 64 40 96h64c0-32 40-48 40-96a72 72 0 0 0-72-72ZM104 224h48" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>More Than a Coffee Spot</h3>
+    </div>
+  </section>
+
+  <!-- ================= MENU / DRINKS BANNER ================= -->
+  <section class="drinks-banner" id="menu">
+    <div class="drinks-banner-media">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1400&auto=format&fit=crop" alt="Two hands preparing espresso cups with cookies on a marble counter">
+    </div>
+    <div class="drinks-banner-list">
+      <p class="drinks-banner-label">Also Pouring</p>
+      <ul>
+        <li>Macchiato</li>
+        <li>Chemex Pour-Over</li>
+        <li>Organic Orange Blossom</li>
+        <li>English Breakfast Tea</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTS / SHOP ================= -->
+  <section class="products" id="products">
+    <div class="products-intro">
+      <div class="products-cards">
+        <article class="product-card" data-name="Sidamo Reserve" data-price="12.00">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600&auto=format&fit=crop" alt="Bag of Sidamo Reserve coffee beans">
+          </div>
+          <h3>Sidamo Reserve</h3>
+          <p class="product-meta">A single-origin Ethiopian harvest, hand-selected for its bright acidity and notes of jasmine and stone fruit</p>
+          <div class="product-row">
+            <button class="icon-btn add-to-cart" aria-label="Add Sidamo Reserve to cart">
+              <svg width="18" height="18" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M96 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM188 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM42.8 60H228l-24.2 111.3a16 16 0 0 1-15.7 12.7H79.9a16 16 0 0 1-15.7-12.7L37.3 33.3A8 8 0 0 0 29.5 27H8" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="product-price">$12.00</span>
+          </div>
+        </article>
+
+        <article class="product-card product-card-feature" data-name="Mayfair House Blend" data-price="14.00">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?q=80&w=700&auto=format&fit=crop" alt="Mayfair House Blend coffee bag on a round display">
+          </div>
+          <h3><em>Mayfair House Blend</em></h3>
+          <p class="product-meta">Our founding roast — a considered blend of rich cocoa and toasted hazelnut, unmistakably BrewHaven in every cup</p>
+          <div class="product-row">
+            <button class="btn btn-cream add-to-cart">
+              <svg width="16" height="16" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M96 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM188 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM42.8 60H228l-24.2 111.3a16 16 0 0 1-15.7 12.7H79.9a16 16 0 0 1-15.7-12.7L37.3 33.3A8 8 0 0 0 29.5 27H8" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Shop
+            </button>
+            <span class="product-price">$14.00</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Midnight Roast" data-price="13.00">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600&auto=format&fit=crop" alt="Bag of Midnight Roast coffee beans">
+          </div>
+          <h3>Midnight Roast</h3>
+          <p class="product-meta">A dark, slow-roasted blend with a velvety body and a bittersweet edge — built for espresso, bold to the final drop</p>
+          <div class="product-row">
+            <button class="icon-btn add-to-cart" aria-label="Add Midnight Roast to cart">
+              <svg width="18" height="18" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M96 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM188 216a12 12 0 1 1-12-12 12 12 0 0 1 12 12ZM42.8 60H228l-24.2 111.3a16 16 0 0 1-15.7 12.7H79.9a16 16 0 0 1-15.7-12.7L37.3 33.3A8 8 0 0 0 29.5 27H8" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="product-price">$13.00</span>
+          </div>
+        </article>
+      </div>
+      <div class="products-copy">
+        <h2>Bring the <em>BrewHaven</em> ritual home — shop the beans we roast, blend, and pour every morning, alongside biscuits baked fresh each day.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DRINKS MENU GRID ================= -->
+  <section class="menu-grid" aria-label="Drinks menu">
+    <h2 class="section-title">On the Menu</h2>
+    <div class="menu-grid-list">
+      <article class="menu-item">
+        <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500&auto=format&fit=crop" alt="Espresso shot in a small cup"></div>
+        <div class="menu-item-info">
+          <h3>Espresso</h3>
+          <p>A single, unhurried pull — dense, amber crema over a shot of remarkable depth, drawn to order and never rushed.</p>
+        </div>
+        <div class="menu-item-row">
+          <span class="product-price">$3.50</span>
+          <button class="btn btn-outline-light add-to-cart" data-name="Espresso" data-price="3.50">Buy</button>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=500&auto=format&fit=crop" alt="Cappuccino with latte art on a wooden table"></div>
+        <div class="menu-item-info">
+          <h3>Cappuccino</h3>
+          <p>Equal parts espresso, steamed milk, and airy foam, finished by hand for a texture as fine as the flavour beneath it.</p>
+        </div>
+        <div class="menu-item-row">
+          <span class="product-price">$4.50</span>
+          <button class="btn btn-outline-light add-to-cart" data-name="Cappuccino" data-price="4.50">Buy</button>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?q=80&w=500&auto=format&fit=crop" alt="Latte with heart-shaped latte art"></div>
+        <div class="menu-item-info">
+          <h3>Latte</h3>
+          <p>Espresso softened by steamed milk poured in a slow spiral, rounding every note into something quietly indulgent.</p>
+        </div>
+        <div class="menu-item-row">
+          <span class="product-price">$4.50</span>
+          <button class="btn btn-outline-light add-to-cart" data-name="Latte" data-price="4.50">Buy</button>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=500&auto=format&fit=crop" alt="Iced coffee in a glass with ice cubes"></div>
+        <div class="menu-item-info">
+          <h3>Iced Coffee</h3>
+          <p>Freshly brewed and poured straight over ice, kept clean and bright — a quiet lift for a warm afternoon.</p>
+        </div>
+        <div class="menu-item-row">
+          <span class="product-price">$4.00</span>
+          <button class="btn btn-outline-light add-to-cart" data-name="Iced Coffee" data-price="4.00">Buy</button>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=500&auto=format&fit=crop" alt="Flat white coffee in a ceramic cup"></div>
+        <div class="menu-item-info">
+          <h3>Flat White</h3>
+          <p>A double espresso veiled in fine, velvet microfoam — compact, assured, and quietly the strongest thing on the menu.</p>
+        </div>
+        <div class="menu-item-row">
+          <span class="product-price">$5.00</span>
+          <button class="btn btn-outline-light add-to-cart" data-name="Flat White" data-price="5.00">Buy</button>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=500&auto=format&fit=crop" alt="Cold brew coffee in a mason jar"></div>
+        <div class="menu-item-info">
+          <h3>Cold Brew</h3>
+          <p>Steeped in cold water for eighteen patient hours, yielding a smooth, low-acid pour with a lingering, chocolate finish.</p>
+        </div>
+        <div class="menu-item-row">
+          <span class="product-price">$4.50</span>
+          <button class="btn btn-outline-light add-to-cart" data-name="Cold Brew" data-price="4.50">Buy</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= LINGERING MOMENTS ================= -->
+  <section class="lingering" id="contact">
+    <div class="lingering-media">
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop" alt="Two friends sitting and talking at a café table by the window">
+    </div>
+    <div class="lingering-copy">
+      <h2>Lingering Moments.<br><em>Shared Stories.</em><br>Thoughtfully Brewed.</h2>
+      <dl class="lingering-details">
+        <div>
+          <dt>Location</dt>
+          <dd>123 Main Street</dd>
+        </div>
+        <div>
+          <dt>Hours</dt>
+          <dd>Monday–Sunday: 8am–8pm</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="lingering-media lingering-media-tall">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=800&auto=format&fit=crop" alt="Coffee being poured into a glass cup with rich crema">
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo-footer">
+        <span class="logo-mark">BREWHAVEN</span>
+        <span class="logo-sub">COFFEE &amp; BISCUITS</span>
+      </a>
+      <p class="footer-tagline">The best discoveries are shared. Pass along a good cup.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="newsletterEmail" class="sr-only">Email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Enter your Email" autocomplete="email" required>
+        <button type="submit">Subscribe
+          <svg width="14" height="14" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M224 128 32 40l32 88-32 88Z" stroke="currentColor" stroke-width="16" stroke-linejoin="round"/><path d="M64 128h96" stroke="currentColor" stroke-width="16" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+      <p class="newsletter-status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#products">Artisan Beans</a>
+        <a href="#products">Espresso Capsules</a>
+        <a href="#products">Curated Coffee</a>
+        <a href="#products">Biscuit Gift Sets</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contact us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2025 BrewHaven Coffee &amp; Biscuits.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="#">Shipping</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookies</a>
+      <a href="#">Allergen &amp; Food Safety Info</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+  <svg width="18" height="18" viewBox="0 0 256 256" fill="none" aria-hidden="true"><path d="M128 208V48M64 112l64-64 64 64" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
